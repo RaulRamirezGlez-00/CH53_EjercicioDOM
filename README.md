@@ -16,3 +16,6 @@ git add .
 git commit -m "Nombre"
 git push origin main
 ```
+>Vista previa del index.html
+
+![Index](https://github.com/RaulRamirezGlez-00/CH53_EjercicioDOM/blob/master/images/index.png?raw=true)
