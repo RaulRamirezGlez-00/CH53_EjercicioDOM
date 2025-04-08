@@ -1,7 +1,7 @@
 let btnMostrar = document.getElementById("btnMostrar");
 let encabezado1 = document.getElementById(encabezado1);
 let encabezado2 = document.getElementById(encabezado2);
-let lista = document.getElementsByTagName("ul");
+let listas = document.getElementsByTagName("ul");
 
 let elementos = document.getElementsByClassName("list-group-item");
 
@@ -24,7 +24,23 @@ encabezado2.innerText = ++contador;
 //console.log(document.getElementById("encabezado1"));
 
 btnMostrar.addEventListener("click", function(event){
-    console.log("boton btnModificar presionado");
+    event.preventDefault(); // No hagas lo que haces por defecto
+
+    let element = document.createElement("li");
+    element.innerText="Amother item"; //<li>Another item</li>
+    element.classList.add("list-group-item");
+
+    let element2 = element.cloneNode(true);
+
+//before Inserta el elemento antes de la lista
+    //listas.item(0).before(element);
+//prepend Inserta el elemento al inicio de la lista
+    //listas.item(0).prepend(element2);
+//append Inserta el elemento al final de la lista    
+    listas.item(0).append(element);
+//after Inserta el elemento despues de la lista
+    listas.item(0).after(element2);
+
 });
 
 
