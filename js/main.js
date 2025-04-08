@@ -55,11 +55,13 @@ listas.item(1).insertAdjacentHTML("afterend",
         Another new item
     </li>`);
 
-listas.item(1).insertAdjacentHTML("afternegin",
+listas.item(1).insertAdjacentHTML("afterbegin",
     `<li class="list-group-item">Another new item</li>`);
 
-listas.item(1).insertAdjacentHTML("beforeemd",
+listas.item(1).insertAdjacentHTML("beforeend",
     `<li class="list-group-item">Another new item</li>`);
+
+
 
 });
 
